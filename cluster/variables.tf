@@ -1,12 +1,12 @@
 variable "pubsub1" {
     type = string
-    default = "subnet-051c49a4d8434be66"
+    default = "subnet-034e0c0f0571216d5"
   
 }
 
 variable "pubsub2" {
     type = string
-    default = "subnet-02273f25c912d46ee"
+    default = "subnet-0766e2fed2887a386"
   
 }
 

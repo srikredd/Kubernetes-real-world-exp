@@ -45,7 +45,7 @@ jobs:
 
     - name: Terraform Plan
       working-directory: cluster/
-      run: terraform plan -var="k8sVesrion=1.27"
+      run: terraform plan -var="k8sVersion=1.27"
 
     - name: Terraform Apply
       working-directory: cluster/  

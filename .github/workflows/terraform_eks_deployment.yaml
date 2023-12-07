@@ -37,7 +37,7 @@ jobs:
 
     - name: Terraform Init 
       working-directory: cluster/
-      run: terraform init 
+      run: terraform init -reconfigure 
 
     - name: Terraform Format
       working-directory: cluster/

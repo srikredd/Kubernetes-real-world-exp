@@ -35,9 +35,9 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
 
-    - name: Terraform Init -migrate-state
+    - name: Terraform Init 
       working-directory: cluster/
-      run: terraform init -backend-config "bucket=terraformaws99" -backend-config "key=eks-prod.tfstate"
+      run: terraform init 
 
     - name: Terraform Format
       working-directory: cluster/

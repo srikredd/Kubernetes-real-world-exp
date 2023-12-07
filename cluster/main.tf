@@ -1,15 +1,22 @@
 terraform {
-  backend "s3" {
-    bucket = "terraformaws99"
-    key    = "eks-terraform.tfstate"
-    region = "us-east-1"
-  }
   required_providers {
     aws = {
       source = "hashicorp/aws"
     }
   }
 }
+
+# Your actual Terraform configurations go below this line
+resource "aws_iam_role" "eks-iam-role" {
+  # ...
+}
+
+resource "aws_eks_cluster" "eks" {
+  # ...
+}
+
+# ... (Other resources and configurations)
+
 
 # IAM Role for EKS to have access to the appropriate resources
 resource "aws_iam_role" "eks-iam-role" {
